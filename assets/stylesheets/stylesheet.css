@@ -6,9 +6,7 @@ html, body {
 	height: 100%
 }
 
-h1,h2,h3,h4,h5,h6,p {
-	margin-bottom: 5px;
-}
+
 
 nav {
 	position: fixed;
@@ -41,7 +39,7 @@ li {
 	float: left;
 }
 
-li a, #title {
+li a {
     display: block;
     color: white;
     text-align: center;
@@ -73,5 +71,6 @@ li a:hover {
 
 .sub-section {
 	height: auto;
-	background-color: white;
+	background-color: black;
+	color: white; 
 }
