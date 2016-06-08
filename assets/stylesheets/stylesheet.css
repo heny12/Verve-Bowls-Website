@@ -7,7 +7,9 @@ html, body {
 	font-family: 'Josefin Sans', serif;
 }
 
-
+h1 {
+	margin-bottom: 15px;
+}
 
 nav {
 	position: fixed;
@@ -27,7 +29,7 @@ ul {
 
 }
 
-ul, .sub-section {
+ul, .section-content {
 	padding-right: 10%;
 	padding-left: 10%;
 }
@@ -77,4 +79,43 @@ li a:hover {
 	background-color: white;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	overflow: hidden;
+}
+
+#map, #pano {
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+
+.gm-style-cc { 
+	display:none; 
+}
+
+.contact-form {
+	width: 60%;
+}
+
+.contact-form * {
+	margin: 2px;
+}
+
+.wide {
+	width: 100%;
+}
+
+.half-wide {
+	width: 50%;
+}
+
+.most-wide {
+	width: 75%;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }

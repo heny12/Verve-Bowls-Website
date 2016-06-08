@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
     <title>Scott's Website</title>
     <meta name="author" content="name">
     <meta name="description" content="description here">
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/stylesheets/stylesheet.css" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="assets/javascripts/google-analytics.js"></script>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js"></script>
 
   </head>
   <body>
@@ -35,30 +36,34 @@
   
   <div class='sub-section'>
     <a name="about_us" id="about_us"></a>
-    <h1>about us</h1>
-    <p>
-      This is scotts acaitia berry shop!</p>
+    <h1 class='section-content'>about us</h1>
+    <div id="map"></div>
+    <div id="pano"></div>
+    <p></p>
   </div>
 
   <div class='section section-2'></div>
   
   <div class='sub-section'>
     <a name="menu" id="menu"></a>
-    <h1>menu</h1>
-    <ul>
-      <p>Acai</p>
-      <p>Acai</p>
-      <p>Acai</p>
-      <p>Acai</p>
-      <p>Acai</p>
-    </ul>
+    <h1 class='section-content'>menu</h1>
   </div>
   
   <div class='section section-3'></div>
   
   <div class='sub-section'>
     <a name="contact_us" id="contact_us"></a>
-    <h1>contact us</h1>
+    <div class="section-content">
+      <h1>contact us</h1>
+
+      <form action="lib/mailer.php" method="post" class="contact-form">
+        <input class="most-wide left" type="text" name="first_name" placeholder="First name">
+        <input class="most-wide left" type="text" name="last_name" placeholder="Last name">
+        <input class="most-wide" type="text" name="email" placeholder="Email address">
+        <textarea class="wide" rows="5" name="message" placeholder="Enter message..."></textarea>
+        <input type="submit" name="submit" value="Submit">
+      </form>
+    </div>
   </div>
   
   <div class='section section-4'></div>
