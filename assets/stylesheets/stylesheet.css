@@ -5,19 +5,29 @@
 html, body {
 	height: 100%;
 	font-family: 'Josefin Sans', serif;
+	font-size: 12pt;
 }
 
 h1 {
-	margin-bottom: 15px;
+	margin-bottom: 40px;
+	color: #530053;
+	font-size: 3.5em;
+}
+h2 {
+	font-size: 2em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+h3 {
+	margin-bottom: 20px;
 }
 
 nav {
 	position: fixed;
-	height: 40px;
+	height: 60px;
 	width: 100%;
-	background-color: rgba(0,0,0,0.6);
+	background-color: rgba(125,26,125,0.6);
 	z-index: 999;
-
 }
 
 
@@ -26,7 +36,6 @@ ul {
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
-
 }
 
 ul, .section-content {
@@ -36,7 +45,11 @@ ul, .section-content {
 
 #title {
 	float: left;
-	font-size: 16pt;
+}
+
+#title a img {
+	width: 60px;
+	height: 45px;
 }
 
 li {
@@ -78,14 +91,65 @@ li a:hover {
 	height: auto;
 	background-color: white;
 	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-bottom: 30px;
 	overflow: hidden;
+	text-align: center;
+	border-style: solid;
+	border-color: #530053;
+	border-width: 6px 0px 6px 0px; 
+}
+
+.box {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.value {
+	float: center;
+	font-size: 25pt;
+	margin-right: 10px;
+	margin-left: 10px;
+	font-weight: 500;
+}
+
+.menu-item{
+	width: 45%;
+	display: inline-block;
+	float: center;
+	padding: 20px;
+
+}
+
+.menu-item-name {
+	font-weight: bold;
+	color: rgba(125,26,125,1);
+	font-size: 19pt;
+	margin-bottom: 10px;
+}
+
+.item-menu-subtitle {
+	text-decoration: underline;
+	font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.menu-item-base {
+	font-weight: 600;
+	/*color: #530053;*/
+}
+
+.menu-item-toppings {
+	font-weight: 600;
+	/*color: #530053;*/
 }
 
 #map, #pano {
 	width: 50%;
 	height: 300px;
 	float: left;
+	margin-top: 24px;
 }
 
 .gm-style-cc { 
@@ -93,7 +157,7 @@ li a:hover {
 }
 
 .contact-form {
-	width: 60%;
+	width: 100%;
 }
 
 .contact-form * {
@@ -118,4 +182,28 @@ li a:hover {
 
 .right {
 	float: right;
+}
+
+.center {
+   width: 400px;
+   height: 300px;
+   position: absolute;
+   left: 50%;
+   top: 50%; 
+   margin-left: -200px;
+   margin-top: -150px;
+}
+
+.nav-button {
+	font-size: 14pt;
+	margin-top: 10px;
+}
+
+#mail_page {
+	background-color:  rgba(125,26,125,1);
+}
+
+#mail_message {
+	font-size: 30pt;
+	color: white;
 }
