@@ -9,6 +9,19 @@ $( document ).ready(function() {
 });
 
 
+          
+$(document).ready(function(){                    
+    $(window).scroll(function(){                          
+        if ($(this).scrollTop() > ($(window).height()-80)) {
+            $('#navbar .background').fadeIn(500);
+        } else {
+            $('#navbar .background').fadeOut(500);
+        }
+    });
+});
+
+
+
 // initialize map
 function initializeMap() {
 	var center = new google.maps.LatLng(47.6152372,-122.3227216);

@@ -6,6 +6,7 @@ html, body {
 	height: 100%;
 	font-family: 'Josefin Sans', serif;
 	font-size: 12pt;
+	min-height: 500px;
 }
 
 h1 {
@@ -20,16 +21,24 @@ h2 {
 }
 h3 {
 	margin-bottom: 20px;
+	margin-top: 70px;
 }
 
-nav {
+#navbar {
 	position: fixed;
 	height: 60px;
 	width: 100%;
-	background-color: rgba(125,26,125,0.6);
 	z-index: 999;
 }
 
+#navbar .background {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-color: rgba(125,26,125,0.6);
+}
 
 ul {
 	list-style-type: none;
@@ -72,10 +81,12 @@ li a:hover {
 	height: 100%;
 	background-size: cover;
 	background-attachment: fixed;
+    background-repeat: no-repeat;
+	background-position: center 15%;
 }
 
 .section-1 {
-	background-image: url('../images/backgrounds/image1.jpg');
+	background-image: url('../images/backgrounds/image1.jpg') ;
 }
 .section-2 {
 	background-image: url('../images/backgrounds/image2.jpg');
@@ -104,6 +115,10 @@ li a:hover {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: left;
+}
+
+.box-centered {
+	text-align: center;
 }
 
 .value {
@@ -199,11 +214,106 @@ li a:hover {
 	margin-top: 10px;
 }
 
+.nav-button:hover {
+    text-decoration: underline;
+}
+
 #mail_page {
 	background-color:  rgba(125,26,125,1);
+	padding: 10px;
 }
 
 #mail_message {
 	font-size: 30pt;
 	color: white;
 }
+
+#submit {
+  color: white;
+  background-color: rgba(125,26,125,0.6);
+  text-shadow: -1px 1px rgba(125,26,125,0.8);;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16pt;
+}
+#submit:hover {
+  background-color: #346392;
+  text-shadow: -1px 1px #27496d;
+}
+#submit:active {
+  background-color: #27496d;
+  text-shadow: -1px 1px #193047;
+}
+
+input[type=text], textarea {
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(125,26,125,0.6);
+    color: white;
+    padding: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus, textarea:focus {
+    border: 1px solid rgba(125,26,125,1);
+    background-color: rgba(125,26,125,0.7);
+}
+
+
+::-webkit-input-placeholder,
+::-webkit-textarea-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder,
+:-ms-textarea-placeholder {  
+   color: white;  
+}
+
+
+/* FOR MOBILE STYLING */
+
+@media only screen and (max-width: 700px) {
+
+	.section {
+		background-size: auto;
+		background-attachment: scroll;
+		background-repeat: repeat;
+	}
+
+	#navbar ul li {
+		float: center;
+		margin: 2px;
+		padding: 1px;
+		display: inline-block;
+		margin-top: 10px;
+	}
+
+	#title img {
+		display: none;
+	}
+
+	.section-content {
+		margin: 3px;
+	}
+
+	.menu-item{
+		width: 75%;
+		padding: 20px;
+	}
+
+}
+

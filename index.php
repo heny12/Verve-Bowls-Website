@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Verve Bowls</title>
     <meta name="author" content="name">
     <meta name="description" content="description here">
@@ -20,21 +20,21 @@
   <script src="assets/javascripts/jquery-ui.js" type="text/javascript"></script>
   <script type="text/javascript" src="assets/javascripts/index.js"></script>
 
-  <nav>
+  <nav id='navbar'>
+    <div class='background'></div>
     <ul>
       <li id='title'><a href='#home'>
         <img src="assets/images/logo.png" alt="verve bowls" />
-      </a><li>
+      </a>
       <li class='nav-button'><a href="#contact_us">contact us</a></li>
       <li class='nav-button'><a href="#menu">menu</a></li>
       <li class='nav-button'><a href="#about_us">about us</a></li>
-
     </ul>
   </nav>
 
   <div class='section section-1'>
     <a name="home" id="home"></a>
-    <img class='center' src="assets/images/logo.png" alt="verve bowls" />
+    <img class='center' src="assets/images/now_open.png" alt="verve bowls" />
   </div>
   
   <div class='sub-section'>
@@ -45,13 +45,15 @@
       <h3>Live Vervaciously!</h3>
       <p class="box">Acai [AHHH-SIGH-EEEE] is a plump, dark purple berry harvested from acai palm trees in the rainforests in South America. At Verve Bowls, we blend the highest quality acai to create amazing bowls that will keep you feeling healthy.
       </p>
-      <br/>
       <h3>Our Values</h3>
       <span class="value">Local</span>
       <span class="value">Handcrafted</span>
       <span class="value">Healthy</span>
-      <br/>
+      <h3>Find Us!</h3>
+      <span class="box box-centered">We are located at </span>
+      <a target='_blank' href='https://www.google.com/maps/dir/Current+Location/715+East+Pine+Street,+Seattle,+WA+98122'>715 E Pine St, Seattle, WA 98122</a>
     </div>
+
     <div id="map"></div>
     <div id="pano"></div>
   </div>
@@ -304,11 +306,11 @@
         <p>Questions? Comments? Send us a message!</p>
         <br/>
         <form action="mailer.php" method="post" class="contact-form">
-          <input class="most-wide left" type="text" name="first_name" placeholder="First name">
-          <input class="most-wide left" type="text" name="last_name" placeholder="Last name">
-          <input class="most-wide left" type="text" name="email" placeholder="Email address">
+          <input class="wide left" type="text" name="first_name" placeholder="First name">
+          <input class="wide left" type="text" name="last_name" placeholder="Last name">
+          <input class="wide left" type="text" name="email" placeholder="Email address">
           <textarea class="wide" rows="5" name="message" placeholder="Enter message..."></textarea>
-          <input type="submit" name="submit" value="Submit">
+          <input id="submit" type="submit" name="submit" value="Submit">
         </form>
       </div>
     </div>
